@@ -7,12 +7,7 @@ export const GENERAL_INFO = {
     linkdinProfile: 'https://www.linkedin.com/in/anil-r-a2a75a403/',
 };
 
-export const SOCIAL_LINKS = [
-    {
-        name: 'linkedin',
-        url: 'https://www.linkedin.com/in/anil-r-a2a75a403/',
-    },
-];
+export const SOCIAL_LINKS: { name: string; url: string }[] = [];
 
 export const MY_STACK = {
     frontend: [

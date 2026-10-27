@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import { MoveUpRight } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
+import { GENERAL_INFO } from '@/lib/data';
 
 const COLORS = [
     'bg-yellow-500 text-black',
@@ -92,26 +92,7 @@ const Navbar = () => {
                 ></div>
 
                 <div className="grow flex md:items-center w-full max-w-[300px] mx-8 sm:mx-auto">
-                    <div className="flex gap-10 lg:justify-between max-lg:flex-col w-full">
-                        <div className="max-lg:order-2">
-                            <p className="text-muted-foreground mb-5 md:mb-8">
-                                SOCIAL
-                            </p>
-                            <ul className="space-y-3">
-                                {SOCIAL_LINKS.map((link) => (
-                                    <li key={link.name}>
-                                        <a
-                                            href={link.url}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-lg capitalize hover:underline"
-                                        >
-                                            {link.name}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                    <div className="w-full">
                         <div className="">
                             <p className="text-muted-foreground mb-5 md:mb-8">
                                 MENU

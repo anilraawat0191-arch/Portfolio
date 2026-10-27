@@ -1,7 +1,6 @@
 'use client';
 import ArrowAnimation from '@/components/ArrowAnimation';
-// import Button from '@/components/Button';
-import { GENERAL_INFO } from '@/lib/data';
+
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -54,29 +53,7 @@ const Banner = () => {
                         experience in building high-performance, scalable, and
                         responsive web solutions.
                     </p>
-                    {/* <Button
-                        as="a"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={GENERAL_INFO.linkdinProfile}
-                        variant="primary"
-                        className="mt-9 banner-button slide-up-and-fade"
-                    >
-                        Hire Me
-                    </Button> */}
-                    <a
-                        href={GENERAL_INFO.linkdinProfile}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-9 banner-butt slide-up-and-fade text-white-600 border"
-                    >
-                        {/* <Button
-                            variant="primary"
-                            className="mt-9 banner-button slide-up-and-fade"
-                        > */}
-                        Hire Me
-                        {/* </Button> */}
-                    </a>
+
                 </div>
 
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
